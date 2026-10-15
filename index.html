@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>과외 선생님 소개</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', 'Malgun Gothic', sans-serif; }
+  body { background:#f4f6f9; color:#333; line-height:1.6; }
+
+  header {
+    background: linear-gradient(135deg, #4a6cf7, #6f86ff);
+    color:#fff; text-align:center; padding:60px 20px;
+  }
+  header h1 { font-size:2.4rem; margin-bottom:10px; }
+  header p { font-size:1.1rem; opacity:0.9; }
+  header .badge-top {
+    display:inline-block; margin-top:14px; background:rgba(255,255,255,0.18);
+    padding:8px 18px; border-radius:20px; font-size:0.9rem; font-weight:700;
+    border:1px solid rgba(255,255,255,0.35);
+  }
+
+  .container { max-width:800px; margin:0 auto; padding:40px 20px; }
+
+  section { background:#fff; border-radius:12px; padding:30px; margin-bottom:25px; box-shadow:0 4px 12px rgba(0,0,0,0.05); }
+  section h2 { color:#4a6cf7; margin-bottom:15px; border-bottom:2px solid #eef1ff; padding-bottom:8px; }
+
+  .profile-info p { margin-top:10px; }
+  .profile-info .school {
+    display:inline-block; background:#eef1ff; color:#4a6cf7; font-weight:700;
+    padding:6px 14px; border-radius:8px; margin-top:8px; font-size:0.95rem;
+  }
+
+  ul.subjects { list-style:none; display:flex; gap:10px; flex-wrap:wrap; }
+  ul.subjects li { background:#eef1ff; color:#4a6cf7; padding:8px 16px; border-radius:20px; font-size:0.9rem; font-weight:600; }
+
+  .achv-list { list-style:none; }
+  .achv-list li { padding:10px 0; border-bottom:1px solid #f0f0f0; }
+  .achv-list li:last-child { border-bottom:none; }
+  .achv-list .icon { margin-right:8px; }
+
+  table.history { width:100%; border-collapse:collapse; font-size:0.92rem; }
+  table.history th, table.history td { padding:10px 8px; text-align:center; border-bottom:1px solid #f0f0f0; }
+  table.history th { color:#4a6cf7; font-weight:700; background:#f9faff; }
+  table.history td.subject { text-align:left; padding-left:14px; }
+
+  .review { background:#f9faff; border-left:4px solid #4a6cf7; padding:15px 20px; margin-bottom:12px; border-radius:0 8px 8px 0; }
+  .review p { font-style:italic; }
+  .review span { display:block; margin-top:8px; font-size:0.85rem; color:#888; font-style:normal; }
+
+  .contact { text-align:center; }
+  .contact .info { font-size:1.05rem; margin:8px 0; }
+  .contact a { color:#4a6cf7; text-decoration:none; font-weight:600; }
+  .cta-btn {
+    display:inline-block; margin-top:15px; background:#4a6cf7; color:#fff;
+    padding:14px 36px; border-radius:30px; text-decoration:none; font-weight:700;
+    transition:background 0.2s;
+  }
+  .cta-btn:hover { background:#3a59d9; }
+
+  footer { text-align:center; padding:20px; color:#aaa; font-size:0.85rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>김민준 선생님</h1>
+  <p>경희대학교 산업경영공학과 재학 · 수학·물리·국어 전문 과외</p>
+  <div class="badge-top">🏆 김과외 인증 전국 상위 0.2% 선생님</div>
+</header>
+
+<div class="container">
+
+  <!-- 자기소개 -->
+  <section>
+    <div class="profile-info">
+      <h3>김민준 / 수능의 기술</h3>
+      <span class="school">경희대학교 공과대학 산업경영공학과 재학</span>
+      <p>
+        안녕하세요! 정시 전형으로 경희대 공과대학에 최초 합격하고,
+        공군사관학교 필기 합격 및 독학재수학원 장학생으로 선발된 경험을 바탕으로
+        체계적인 학습 전략을 직접 경험하고 지도하는 과외 선생님입니다.
+        과외를 시작한 지는 3개월이 되었지만, 짧은 기간 동안 누적 9건의 과외를 진행하며
+        다양한 학년·과목의 내신 및 수능 대비 경험을 쌓았습니다.
+        단순히 문제를 풀어주는 것이 아니라, 시험기간에는 직접 개념 노트를 만들어주는 등
+        학생 한 명 한 명에게 진심을 다해 지도합니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- 지도 과목 -->
+  <section>
+    <h2>지도 과목</h2>
+    <ul class="subjects">
+      <li>중등 수학</li>
+      <li>고등 내신 수학</li>
+      <li>고등 수능 수학 (수1·수2·확통·미적)</li>
+      <li>고등 국어 (수능)</li>
+      <li>물리학Ⅰ (내신·수능)</li>
+      <li>지구과학Ⅰ (내신·수능)</li>
+    </ul>
+  </section>
+
+  <!-- 주요 이력 -->
+  <section>
+    <h2>주요 이력</h2>
+    <ul class="achv-list">
+      <li><span class="icon">🥇</span>2025학년도 공군사관학교 필기 합격</li>
+      <li><span class="icon">🎓</span>이투스 247 독학재수학원 장학생 선발</li>
+      <li><span class="icon">✅</span>정시 전형 경희대학교 공과대학 최초 합격</li>
+      <li><span class="icon">🏆</span>김과외 인증 전국 상위 2% 선생님 (멤버십 레벨 기준)</li>
+    </ul>
+  </section>
+
+  <!-- 과외 이력 -->
+  <section>
+    <h2>과외 이력 (누적 9건)</h2>
+    <table class="history">
+      <thead>
+        <tr><th>학년</th><th>성별</th><th>과목</th><th>지도 내용</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>중2</td><td>여</td><td>수학</td><td class="subject">중2 내신 대비 및 선행</td></tr>
+        <tr><td>중2</td><td>남</td><td>수학</td><td class="subject">중2 내신 대비 및 중3 선행</td></tr>
+        <tr><td>중3</td><td>여</td><td>수학</td><td class="subject">중3 내신 대비 및 고등 선행</td></tr>
+        <tr><td>고2</td><td>여</td><td>과학</td><td class="subject">2022개정 물리학 내신 대비</td></tr>
+        <tr><td>고2</td><td>여</td><td>과학</td><td class="subject">2022개정 물리학 내신 대비</td></tr>
+        <tr><td>고2</td><td>남</td><td>과학</td><td class="subject">2022개정 물리학 내신 대비</td></tr>
+        <tr><td>고2</td><td>여</td><td>과학</td><td class="subject">대수/미적분Ⅰ 내신 대비</td></tr>
+        <tr><td>고3</td><td>여</td><td>과학</td><td class="subject">물리학Ⅰ 수능 대비</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 학생 후기 -->
+  <section>
+    <h2>학생 후기</h2>
+    <div class="review">
+      <p>선생님도 시험기간이신데 밤새가며 제가 어려워하던 문제 풀어주시고 개념 노트도 손수 만들어 주시는 열정적이신 분입니다 감사합니다.</p>
+      <span>- 물리학Ⅰ 내신 대비, 고2 학생</span>
+    </div>
+  </section>
+
+  <!-- 수업 방식 -->
+  <section>
+    <h2>수업 방식</h2>
+    <p>✔ 학생 수준에 맞춘 맞춤형 진도 설계</p>
+    <p>✔ 시험기간 집중 케어 및 개념 노트 제작</p>
+    <p>✔ 내신·수능 목표에 맞춘 전략적 학습 플랜</p>
+    <p>✔ 대면 / 비대면(온라인) 수업 모두 가능</p>
+  </section>
+
+  <!-- 연락처 -->
+  <section class="contact">
+    <h2>문의하기</h2>
+    <p class="info">📞 전화번호: 010-0000-0000</p>
+    <p class="info">✉️ 이메일: example@email.com</p>
+    <p class="info">💬 카카오톡 ID: kakao_id</p>
+    <a class="cta-btn" href="tel:01000000000">상담 신청하기</a>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 과외 선생님 소개 페이지. 신규 학생을 환영합니다.
+</footer>
+
+</body>
+</html>
